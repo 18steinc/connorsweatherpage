@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Data</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(120deg, #d3f4ff, #f9f9f9);
+      min-height: 100vh;
+      font-family: 'Arial', sans-serif;
+    }
+    .container {
+      padding-top: 20px;
+    }
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border: none;
+      border-radius: 10px;
+    }
+    img {
+      border-radius: 10px;
+    }
+    h1, h5 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Weather Website</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Hurricane</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Radar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Models</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div class="container">
+    <h1 class="text-center mb-5">Live Weather Updates</h1>
+
+    <div class="row">
+      <!-- First Weather Image -->
+      <div class="col-md-6">
+        <div class="card mb-4">
+          <img src="https://www.nhc.noaa.gov/xgtwo/two_atl_7d0.png" class="card-img-top" alt="Seven-Day Tropical Weather Outlook" id="outlook7">
+          <div class="card-body">
+            <h5 class="card-title">Seven-Day Tropical Weather Outlook</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Second Weather Image -->
+      <div class="col-md-6">
+        <div class="card mb-4">
+          <img src="https://www.nhc.noaa.gov/gtwo.php?basin=atlc&fdays=2" class="card-img-top" alt="Two-Day Tropical Weather Outlook" id="outlook2">
+          <div class="card-body">
+            <h5 class="card-title">Two-Day Tropical Weather Outlook</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap JS and Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

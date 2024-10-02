@@ -1,1 +1,31 @@
-
+ <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+ <style>
+    body {
+      background: linear-gradient(120deg, #d3f4ff, #f9f9f9);
+      min-height: 100vh;
+      font-family: 'Impact', sans-serif; /* Change font to Impact */
+      font-weight: bold; /* Make all text bold */
+    }
+    .container {
+      padding-top: 20px;
+    }
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border: none;
+      border-radius: 10px;
+    }
+    img {
+      border-radius: 10px;
+      width: auto;
+      max-width: 650px;
+      height: auto;
+      max-height: 500px; /* Adjust this value to set a fixed heihgt for all images */
+      object-fit: cover; /* This ensure that the image covers the entire area without distorition */
+    }
+    h1, h5 {
+      text-align: center;
+    }
+    h1, h5 {
+      text-align: center;
+    }

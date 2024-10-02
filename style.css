@@ -51,6 +51,11 @@ h1, h5 {
   color: #ef7301; /* Change to your desired hover color */
   text-decoration: underline; /* Optional: underline on hover */
 }
+/* Style for active link */
+.navbar .nav-link.active {
+  font-weight: bold;
+  color: #ffcc00; /* Highlight color for active link */
+}
 
 /* Footer Styling */
 .footer {

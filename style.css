@@ -1,61 +1,180 @@
-/* External styles for Connor's Weather Page */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connor's Weather Page - Home</title>
+  
+  <!-- Link to external style.css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* Bootstrap CSS */
-@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css');
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/cwp_logo.png" alt="CWP Logo" class="nav-logo">
+        CWP
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="hurricane.html">Hurricane</a></li>
+          <li class="nav-item"><a class="nav-link" href="models.html">Models</a></li>
+          <li class="nav-item"><a class="nav-link" href="radar.html">Radar</a></li>
+          <li class="nav-item"><a class="nav-link" href="wind.html">Wind</a></li>
+          <li class="nav-item"><a class="nav-link" href="other.html">Other</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container">
+    
+    <!-- Home Page Top Text Bar -->
+    <h1 class="text-center mb-5">Welcome to Connor's Weather Page!</h1>
 
-/* Global Styles */
-body {
-  background: linear-gradient(120deg, #d3f4ff, #f9f9f9);
-  min-height: 100vh;
-  font-family: 'Impact', sans-serif; /* Change font to Impact */
-  font-weight: bold; /* Make all text bold */
-}
+    <div class="row">
+      <!-- Widget at the top with Orlando live data -->
+      <div class="col-md-12 text-center">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/28d54n81d38/orlando/?unit=us" data-label_1="ORLANDO" data-label_2="WEATHER" data-theme="gray">ORLANDO WEATHER</a>
+        <script>
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+        <br>
+      </div>
+    <div class="container">
+      <!-- 7 day and 2 day Tropical Outlook side by side -->
+      <div class="row">
+        <!-- 7 Day Tropical Outlook -->
+        <div class="col-md-6 d-flex">
+          <div class="card mb-4 flex-fill">
+            <img src="https://www.nhc.noaa.gov/xgtwo/two_atl_7d0.png" class="card-img-top" alt="Seven-Day Tropical Weather Outlook" id="outlook7">
+          </div>
+        </div>
+        <!-- 2 Day Tropical Outlook -->
+        <div class="col-md-6 d-flex">
+          <div class="card mb-4 flex-fill">
+            <img src="https://www.nhc.noaa.gov/xgtwo/two_atl_2d0.png" class="card-img-top" alt="Two-Day Tropical Weather Outlook" id="outlook2">
+          </div>
+        </div>
+      </div>
 
-.container {
-  padding-top: 20px;
-}
+      <!-- Severe Weather and Florida Live Radar side by side -->
+      <div class="row">
+        <!-- Severe Weather Outlook -->
+        <div class="col-md-6 d-flex">
+          <div class="card mb-4 flex-fill">
+            <h5 class="card-title">Severe Weather Outlook for Today</h5>
+            <img src="https://www.spc.noaa.gov/products/outlook/day1otlk_0100.gif" class="card-img-top" alt="Severe Weather Outlook" id="outlookSevere">
+          </div>
+        </div>
+        <!-- Florida Live Radar -->
+        <div class="col-md-6 d-flex">
+          <div class="card mb-4 flex-fill">
+            <h5 class="card-title">Florida Live Radar</h5>
+            <img src="https://radar.weather.gov/ridge/standard/SOUTHEAST_loop.gif" class="card-img-top" alt="Florida Live Radar" id="liveRadar">
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    
+<div class="container">
+  <!-- Gulf & Atlantic Basic Radar - 7 Day Florida Rainfall -->
+  <div class="row">
+    <!-- Gulf & Atlantic Basic Radar -->
+    <div class="col-md-6 d-flex">
+      <div class="card mb-4 flex-fill">
+        <h5 class="card-title">Gulf of Mexico & Atlantic Live Radar</h5>
+        <img src="https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/taw/Sandwich/GOES16-TAW-Sandwich-900x540.gif" class="card-img-top" alt="Gulf & Atlantic Live Radar" id="gulfAtlanticRadar">
+      </div>
+    </div>
+    <!-- Florida 7 Day Rainfall -->
+    <div class="col-md-6 d-flex">
+      <div class="card mb-4 flex-fill">
+        <h5 class="card-title">7 Day Rainfall Totals - Euro Model</h5>
+        <img src="https://media.raven.news/images/wx/bn9/WSI/Forecasts/lg_aatrack6.jpg" class="card-img-top" alt="7 Day Rainfall" id="rainfallTotals">
+      </div>
+    </div>
+  </div>
 
-.card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: none;
-  border-radius: 10px;
-}
+  
+<div class="container">
+  <!-- Current Tornado and Thunderstorm watches - Gulf of Mexico Live Radar -->
+  <div class="row">
+    <!-- Current Tornado and Thunderstorm watches -->
+    <div class="col-md-6 d-flex">
+      <div class="card mb-4 flex-fill">
+        <h5 class="card-title">Current Tornado and Thunderstorm Watches</h5>
+        <img src="https://www.spc.noaa.gov/products/watch/validww.png" class="card-img-top" alt="Current Tornado and Thunderstorm Watches" id="tornadothunderstormWatches">
+      </div>
+    </div>
+    <!-- Gulf of Mexico Live Radar -->
+    <div class="col-md-6 d-flex">
+      <div class="card mb-4 flex-fill">
+        <h5 class="card-title">Gulf of Mexico Live Radar</h5>
+        <img src="https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/gm/Sandwich/GOES16-GM-Sandwich-1000x1000.gif" class="card-img-top" alt="GulfofMexicoLiveRadar" id="gulfofMexicoradar">
+      </div>
+    </div>
+  </div>
 
-img {
-  border-radius: 10px;
-  width: auto;
-  max-width: 650px;
-  height: auto;
-  max-height: 500px;
-  object-fit: cover; /* Ensure the image covers the area without distortion */
-}
+  
+  <div class="container">
+  <!-- Current Water Temperatures - NOAA Water Temperatures - Atlantic -->
+  <div class="row">
+    <!-- Current Water Temperatures -->
+    <div class="col-md-6 d-flex">
+      <div class="card mb-4 flex-fill">
+        <h5 class="card-title">Current Water Temperatures</h5>
+        <img src="https://media.raven.news/images/wx/bn9/60min/fl_sea_sfc_temps.jpg" class="card-img-top" alt="Current Water Temperatures" id="CurrentWaterTemperatures">
+      </div>
+    </div>
+    <!-- NOAA Water Temperatures - Atlantic -->
+    <div class="col-md-6 d-flex">
+      <div class="card mb-4 flex-fill">
+        <h5 class="card-title">NOAA Water Temperatures - Atlantic</h5>
+        <img src="http://www.ospo.noaa.gov/data/sst/contour/usatlant.fc.gif" class="card-img-top" alt="NOAA Water Temperatures - Atlantic" id="NOAAWaterTemperaturesAtlantic">
+      </div>
+    </div>
+  </div>
 
-h1, h5 {
-  text-align: center;
-}
-/* Navigation Bar Logo */
-.nav-logo {
-  height: 80px;  /* Adjusted height for the navbar logo */
-  margin-right: 10px;
-}
 
-/* Footer Styling */
-.footer {
-  background-color: #0A0A0A;
-  padding: 20px;
-  color: #E5E5E5;
-}
+  <div class="container">
+  <!-- Current Wind Shear - Understanding Severe Thunderstorm Categories -->
+  <div class="row">
+    <!-- Current Wind Shear -->
+    <div class="col-md-6 d-flex">
+      <div class="card mb-4 flex-fill">
+        <h5 class="card-title">Current Wind Shear</h5>
+        <img src="https://cdn.tegna-media.com/wwl/weather/Wind_Shear-640x360.jpg" class="card-img-top" alt="Current Wind Shear" id="CurrentWindShear">
+      </div>
+    </div>
+    <!-- Understanding Severe Thunderstorm Categories -->
+    <div class="col-md-6 d-flex">
+      <div class="card mb-4 flex-fill">
+        <h5 class="card-title"></h5>
+        <img src="images/Outlook-category-descriptions.png" class="card-img-top" alt="Understanding Severe Thunderstorm Categories" id="UnderstandingSevereThunderstormCategories">
+      </div>
+    </div>
+  </div>
+    
+   <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <img src="images/cwp_logo.png" alt="CWP Logo" class="footer-logo">
+      <p>www.connorsweatherpage.com</p>
+      <p>This website cannot be used as official forecasts or weather information, I am not an official meteorologist this website is built as a hobby project. The majority of this date is not mine, please credit the source for the data. Please only refer to your local or national news for official weather information.</p>
+    </div>
+  </footer>
 
-.footer-logo {
-  height: 90px;  /* Adjusted height for the footer logo */
-  margin-bottom: 10px;
-}
-
-.footer p {
-  margin: 5px 0;
-  color: #E5E5E5;
-}
-
-.footer p:first-of-type {
-  font-weight: normal;
-}
+  <!-- Bootstrap JS and Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

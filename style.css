@@ -5,7 +5,7 @@
 
 /* Global Styles #0366da(blue from logo) #d6f4ff orginal light blue   */
 body {
-  background: linear-gradient(120deg, #0366da, #f9f9f9);
+  background: linear-gradient(120deg, #0366da, #001c38);
   min-height: 100vh;
   font-family: 'Impact', sans-serif; /* Change font to Impact */
   font-weight: bold; /* Make all text bold */

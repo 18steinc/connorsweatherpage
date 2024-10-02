@@ -5,11 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather Data - Hurricane</title>
 
-<!-- Favicon -->
+  <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico" type="image/ico">
   
-<!-- Link to external style.css -->
+  <!-- Link to external style.css -->
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Custom styling for positioning the hurricane names list */
+    .hurricane-names-container {
+      position: absolute;
+      top: 180px; /* Adjust the top position to align with the 7-day tropical outlook */
+      left: 20px; /* Move it further left as desired */
+      width: 200px;
+    }
+
+    .hurricane-names-list {
+      list-style: none;
+      padding: 0;
+      font-size: 16px;
+    }
+
+    .hurricane-names-list li {
+      padding: 5px 0;
+    }
+  </style>
 </head>
 <body>
 
@@ -36,55 +56,51 @@
     </div>
   </nav>
 
-  <!-- Row 1 -->
+  <!-- Hurricane Names List on the Left -->
+  <div class="hurricane-names-container">
+    <ul class="hurricane-names-list">
+      <li><strong>2024 Hurricane Names</strong></li>
+      <li>Alberto ✅</li>
+      <li>Beryl ✅</li>
+      <li>Chris ✅</li>
+      <li>Debby ✅</li>
+      <li>Ernesto ✅</li>
+      <li>Francine ✅</li>
+      <li>Gordon ✅</li>
+      <li>Helene ✅</li>
+      <li>Isaac ✅</li>
+      <li>Joyce ✅</li>
+      <li>Kirk ✅</li>
+      <li>Leslie</li>
+      <li>Milton</li>
+      <li>Nadine</li>
+      <li>Oscar</li>
+      <li>Patty</li>
+      <li>Rafael</li>
+      <li>Sara</li>
+      <li>Tony</li>
+      <li>Valerie</li>
+      <li>William</li>
+    </ul>
+  </div>
+
   <!-- 7 Day Tropical Outlook - Two-Day Tropical Weather Outlook -->
   <div class="container">
     <h1 class="text-center mb-5">Hurricane Data</h1>
-<!-- Container for the Hurricane Names List -->
-<div class="container">
-  <div class="row">
-    <div class="col-md-3">
-      <ul class="hurricane-names-list">
-        <li>2024 Hurricane Names</li>
-        <li>Alberto ✅</li>
-        <li>Beryl ✅</li>
-        <li>Chris ✅</li>
-        <li>Debby ✅</li>
-        <li>Ernesto ✅</li>
-        <li>Francine ✅</li>
-        <li>Gordon ✅</li>
-        <li>Helene ✅</li>
-        <li>Isaac ✅</li>
-        <li>Joyce ✅</li>
-        <li>Kirk ✅</li>
-        <li>Leslie</li>
-        <li>Milton</li>
-        <li>Nadine</li>
-        <li>Oscar</li>
-        <li>Patty</li>
-        <li>Rafael</li>
-        <li>Sara</li>
-        <li>Tony</li>
-        <li>Valerie</li>
-        <li>William</li>
-      </ul>
-    </div>
     <div class="row">
       <div class="col-md-6">
         <div class="card mb-4">
-           <h5 class="card-title"></h5>
+          <h5 class="card-title"></h5>
           <img src="https://www.nhc.noaa.gov/xgtwo/two_atl_7d0.png" class="card-img-top" alt="Seven-Day Tropical Weather Outlook">
-          <div class="card-body">
-          </div>
+          <div class="card-body"></div>
         </div>
       </div>
 
       <div class="col-md-6">
         <div class="card mb-4">
           <h5 class="card-title"></h5>
-          <img src="https://www.nhc.noaa.gov/xgtwo/two_atl_2d0.png" class="card-img-top" alt=Two-Day Tropical Weather Outlook Model">
-          <div class="card-body">
-          </div>
+          <img src="https://www.nhc.noaa.gov/xgtwo/two_atl_2d0.png" class="card-img-top" alt="Two-Day Tropical Weather Outlook">
+          <div class="card-body"></div>
         </div>
       </div>
     </div>

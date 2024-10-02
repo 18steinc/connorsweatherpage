@@ -77,7 +77,7 @@ h1 {
   transition: transform 0.3s ease;
 }
 
-
+/* HURRICANE PAGE */
 /* Hurricane Page - Hurricane Name List */
 .hurricane-names-list {
   list-style-type: none; /* Removes the default bullet points */
@@ -101,6 +101,7 @@ h1 {
   margin-bottom: 10px; /* Add extra space below the title */
   white-space: nowrap; /* Prevent the title from wrapping onto a new line */
 }
+/* END HURRICANE PAGE *? 
 
 /* FOOTER */
 

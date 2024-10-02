@@ -92,10 +92,11 @@ h1 {
 }
 
 .footer p {
-  margin: 5px 0;
-  color: #E5E5E5;
+  font-weight: normal; /* Normal font for all <p> elements in the footer */
+  color: #E5E5E5; /* Optional: Change this to your desired color */
 }
 
-.footer p:first-of-type {
-  font-weight: normal;
+.footer p:last-of-type {
+  font-weight: normal; /* Make the last paragraph (the long message) normal weight */
+  font-size: 0.9em; /* Optional: Adjust the font size to make it more readable */
 }

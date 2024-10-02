@@ -55,42 +55,52 @@
 
     <div class="row">
       
-<!-- Widget at the top with Orlando live data --> 
-      <a class="weatherwidget-io" href="https://forecast7.com/en/28d54n81d38/orlando/?unit=us" data-label_1="ORLANDO" data-label_2="WEATHER" data-theme="gray" >ORLANDO WEATHER</a>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
+<div class="container">
+  <!-- Widget at the top with Orlando live data -->
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <a class="weatherwidget-io" href="https://forecast7.com/en/28d54n81d38/orlando/?unit=us" data-label_1="ORLANDO" data-label_2="WEATHER" data-theme="gray">ORLANDO WEATHER</a>
+      <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+      </script>
       <br>
-      
-      <!-- 7 day Tropical Outlook -->
-      <div class="col-md-6">
-        <div class="card mb-4">
+    </div>
+  </div>
+
+  <!-- 7 day and 2 day Tropical Outlook side by side -->
+  <div class="row">
+    <!-- 7 Day Tropical Outlook -->
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <img src="https://www.nhc.noaa.gov/xgtwo/two_atl_7d0.png" class="card-img-top" alt="Seven-Day Tropical Weather Outlook" id="outlook7">
+        <div class="card-body">
           <h5 class="card-title"></h5>
-          <img src="https://www.nhc.noaa.gov/xgtwo/two_atl_7d0.png" class="card-img-top" alt="Seven-Day Tropical Weather Outlook" id="outlook7">
-          <div class="card-body">
-          </div>
         </div>
       </div>
-      <!-- 2 day tropical outlook -->
-      <div class="col-md-6">
-        <div class="card mb-4">
-          <img src="https://www.nhc.noaa.gov/xgtwo/two_atl_2d0.png" class="card-img-top" alt="Two-Day Tropical Weather Outlook" id="outlook2">
-          <div class="card-body">
-            <h5 class="card-title"></h5>
-          </div>
+    </div>
+    <!-- 2 Day Tropical Outlook -->
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <img src="https://www.nhc.noaa.gov/xgtwo/two_atl_2d0.png" class="card-img-top" alt="Two-Day Tropical Weather Outlook" id="outlook2">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
         </div>
       </div>
     </div>
   </div>
-    <!-- Tornado & Severe Thunderstorm Current-->
-      <div class="col-md-6">
-        <div class="card mb-4">
+
+  <!-- Tornado & Severe Thunderstorm Current below the 7 day -->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card mb-4">
+        <img src="https://www.spc.noaa.gov/products/outlook/day1otlk_0100.gif" class="card-img-top" alt="Tornado & Severe Thunderstorm Current" id="outlook7">
+        <div class="card-body">
           <h5 class="card-title"></h5>
-          <img src="https://https://www.spc.noaa.gov/products/outlook/day1otlk_0100.gif" class="card-img-top" alt="Tornado & Severe Thunderstorm Current" id="outlook7">
-          <div class="card-body">
-          </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
   
   <!-- Bootstrap JS and Popper -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>

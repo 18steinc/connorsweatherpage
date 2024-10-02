@@ -35,7 +35,7 @@ h1, h5 {
 }
 /* Navigation Bar Logo */
 .nav-logo {
-  height: 25px;  /* Adjusted height for the navbar logo */
+  height: 80px;  /* Adjusted height for the navbar logo */
   margin-right: 10px;
 }
 
@@ -47,7 +47,7 @@ h1, h5 {
 }
 
 .footer-logo {
-  height: 30px;  /* Adjusted height for the footer logo */
+  height: 90px;  /* Adjusted height for the footer logo */
   margin-bottom: 10px;
 }
 

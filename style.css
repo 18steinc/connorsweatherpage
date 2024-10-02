@@ -83,17 +83,19 @@ h1 {
   list-style-type: none; /* Removes the default bullet points */
   padding: 0;
   margin-top: 10px; /* Adjust this to align it properly with the outlook */
+  max-width: 250px; /* Prevents "2024 Hurricane Names" from wrapping */
 }
 
 .hurricane-names-list li {
-  font-size: 1.4em; /* Increase the font size for readability */
-  margin-bottom: 10px; /* Adds more spacing between names */
+  font-size: 1.3em; /* Slightly smaller font size for the names */
+  margin-bottom: 5px; /* Reduces spacing between names */
   color: #E5E5E5; /* Matches your Platinum text color */
 }
 
 .hurricane-names-list li:first-child {
-  font-size: 1.8em; /* Reduce the size of '2024 Hurricane Names' */
+  font-size: 1.6em; /* Adjust font size to fit the heading on one line */
   font-weight: normal; /* Keeps it unbolded */
+  white-space: nowrap; /* Ensures the title stays on one line */
 }
 
 .hurricane-names-list li:before {

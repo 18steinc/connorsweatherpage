@@ -13,29 +13,44 @@ body {
 
 .container {
   padding-top: 20px;
+  display: flex; /* Use flexbox for layout */
 }
 
+/* Adjusted to have two columns: left for names and right for buttons */
+.names-container {
+  flex: 1; /* Allow the names container to grow */
+  margin-right: 20px; /* Add space between columns */
+}
+
+.buttons-container {
+  display: flex; /* Use flexbox for button alignment */
+  flex-direction: column; /* Stack buttons vertically */
+  justify-content: flex-start; /* Align buttons at the top */
+}
+
+/* Card styles */
 .card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: none;
   border-radius: 10px;
 }
 
+/* Image styles */
 img {
   border-radius: 10px;
   width: auto;
-  max-width: 650px;
+  max-width: 650px; /* Keep images at their original size */
   height: auto;
   max-height: 500px;
   object-fit: cover; /* Ensure the image covers the area without distortion */
 }
 
+/* Headings */
 h1, h5 {
   text-align: center;
 }
 
 /* Color of heading on each page */
-/* Change the color of the heading on top of each page */
 h1 {
   color: #E5E5E5; /* Change this to your desired color */
 }
@@ -87,7 +102,7 @@ h1 {
 .hurricane-names-list {
   list-style-type: none; /* Removes the default bullet points */
   padding: 0;
-  margin-top: 10px; /* Align it properly with the outlook */
+  margin: 0; /* Reset margin */
   font-family: Arial, Helvetica, sans-serif; /* Clean, web-safe font */
 }
 
@@ -111,8 +126,7 @@ h1 {
 .button-container {
   display: flex;
   flex-direction: column; /* Stack buttons vertically */
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start; /* Align at the top */
 }
 
 button.btn {

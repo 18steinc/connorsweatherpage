@@ -34,7 +34,8 @@ h1, h5 {
   text-align: center;
 }
 
-/* Change the color of the heading in the Home page */
+/* Color of heading on each page */
+/* Change the color of the heading on top of each page */
 h1 {
   color: #E5E5E5; /* Change this to your desired color */
 }

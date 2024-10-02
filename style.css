@@ -56,7 +56,12 @@ h1, h5 {
   font-weight: bold;
   color: #ffcc00; /* Highlight color for active link */
 }
-
+/* Sticky Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it stays above other content */
+}
 /* Footer Styling */
 .footer {
   background-color: #0A0A0A;

@@ -5,20 +5,27 @@
 
 /* Global Styles */
 body {
-  background: linear-gradient(120deg, #d3f4ff, #f9f9f9);
+  background-color: #13213C; /* Oxford Blue background */
   min-height: 100vh;
-  font-family: 'Impact', sans-serif; /* Change font to Impact */
-  font-weight: bold; /* Make all text bold */
+  font-family: 'Impact', sans-serif; /* Font: Impact */
+  font-weight: bold; /* Bold text */
+  color: #E5E5E5; /* Platinum text color */
 }
 
 .container {
   padding-top: 20px;
 }
 
+.navbar {
+  background-color: #0A0A0A; /* Night color for navigation bar */
+}
+
 .card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: none;
   border-radius: 10px;
+  background-color: #13213C; /* Match the card background to Oxford Blue */
+  color: #E5E5E5; /* Platinum text inside cards */
 }
 
 img {
@@ -32,4 +39,14 @@ img {
 
 h1, h5 {
   text-align: center;
+  color: #E5E5E5; /* Platinum color for headings */
+}
+
+/* Link styles for navigation */
+.nav-link {
+  color: #E5E5E5; /* Platinum color for nav links */
+}
+
+.nav-link:hover {
+  color: #d3f4ff; /* Lighter color on hover */
 }

@@ -42,6 +42,15 @@ h1, h5 {
 .navbar .nav-link {
   font-size: 1.25rem; /* Adjust the size as needed (e.g., 1.5rem, 20px, etc.) */
 }
+/* Add hover effect for navigation links */
+.navbar .nav-link {
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #ffcc00; /* Change to your desired hover color */
+  text-decoration: underline; /* Optional: underline on hover */
+}
 
 /* Footer Styling */
 .footer {

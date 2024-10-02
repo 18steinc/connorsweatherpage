@@ -33,3 +33,29 @@ img {
 h1, h5 {
   text-align: center;
 }
+/* Navigation Bar Logo */
+.nav-logo {
+  height: 30px;  /* Adjusted height for the navbar logo */
+  margin-right: 10px;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #0A0A0A;
+  padding: 20px;
+  color: #E5E5E5;
+}
+
+.footer-logo {
+  height: 40px;  /* Adjusted height for the footer logo */
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 5px 0;
+  color: #E5E5E5;
+}
+
+.footer p:first-of-type {
+  font-weight: bold;
+}

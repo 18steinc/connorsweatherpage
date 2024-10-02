@@ -14,16 +14,16 @@
   <style>
     /* Custom styling for positioning the hurricane names list */
     .hurricane-names-container {
-      position: absolute;
-      top: 180px; /* Adjust the top position to align with the 7-day tropical outlook */
-      left: 20px; /* Move it further left as desired */
-      width: 200px;
+      position: relative; /* Changed from absolute for better layout flow */
+      margin-top: 20px; /* Adjust the top position as needed */
+      margin-left: 10px; /* Add some left margin */
     }
 
     .hurricane-names-list {
       list-style: none;
       padding: 0;
       font-size: 16px;
+      color: #E5E5E5; /* Platinum color for consistency */
     }
 
     .hurricane-names-list li {
@@ -60,7 +60,7 @@
   <h1 class="text-center mb-5">Hurricane Data</h1>
   <div class="row">
     <!-- Hurricane Names List (left side) -->
-    <div class="col-md-3">
+    <div class="col-md-3 hurricane-names-container">
       <ul class="hurricane-names-list">
         <li>2024 Hurricane Names</li>
         <li>Alberto ✅</li>
@@ -104,8 +104,8 @@
     </div>
 
     <!-- Buttons on the right (new section) -->
-    <div class="col-md-3 text-center">
-      <div class="button-container" style="position: absolute; top: 20px; right: 20px;">
+    <div class="col-md-3 text-center" style="padding-top: 40px;"> <!-- Added padding for better spacing -->
+      <div class="button-container">
         <button class="btn btn-primary mb-3" onclick="window.location.href='https://www.nhc.noaa.gov'">Go to NHC</button>
         <button class="btn btn-primary mb-3" onclick="window.location.href='https://www.weather.gov'">Go to Weather.gov</button>
         <button class="btn btn-primary mb-3" onclick="window.location.href='https://www.spc.noaa.gov'">Go to SPC</button>
@@ -131,7 +131,7 @@
       <div class="col-md-6">
         <div class="card mb-4">
           <h5 class="card-title">Tropical Intensity Map</h5>
-          <img src="https://media.raven.news/images/wx/bn9/60min/BHI.jpg" class="card-img-top" alt=Tropical Intensity Map">
+          <img src="https://media.raven.news/images/wx/bn9/60min/BHI.jpg" class="card-img-top" alt="Tropical Intensity Map">
           <div class="card-body">
           </div>
         </div>
@@ -151,7 +151,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
     
-<!-- Link to your navbar.js file -->
+  <!-- Link to your navbar.js file -->
   <script src="navbar.js"></script>
 </body>
 </html>

@@ -33,33 +33,22 @@ img {
 h1, h5 {
   text-align: center;
 }
-
-/* Logo for Navigation Bar */
-.navbar-brand {
-  background-image: url('image/cwp_logo.png'); /* Path to your logo */
-  background-size: contain; /* Adjusts the size of the logo */
-  background-repeat: no-repeat;
-  height: 80px; /* Set the height of the navbar */
-  width: 40px; /* Adjust width as necessary */
-  display: inline-block; /* Makes the element behave like a block */
+/* Navigation Bar Logo */
+.nav-logo {
+  height: 80px;  /* Adjusted height for the navbar logo */
+  margin-right: 10px;
 }
 
 /* Footer Styling */
 .footer {
-  background-color: #E5E5E5;
+  background-color: #0A0A0A;
   padding: 20px;
   color: #E5E5E5;
-  text-align: center; /* Center the footer content */
 }
 
 .footer-logo {
-  background-image: url('image/cwp_logo.png'); /* Path to your logo */
-  background-size: contain; /* Adjusts the size of the logo */
-  background-repeat: no-repeat;
-  height: 80px; /* Set the height of the footer */
-  width: 40px; /* Adjust width as necessary */
-  display: inline-block; /* Makes the element behave like a block */
-  margin-bottom: 10px; /* Space below the logo */
+  height: 90px;  /* Adjusted height for the footer logo */
+  margin-bottom: 10px;
 }
 
 .footer p {
@@ -68,5 +57,5 @@ h1, h5 {
 }
 
 .footer p:first-of-type {
-  font-weight: bold;
+  font-weight: normal;
 }

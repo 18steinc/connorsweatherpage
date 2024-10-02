@@ -92,14 +92,14 @@ h1 {
 }
 
 .hurricane-names-list li:first-child {
-  font-weight: bold; /* Makes the '2024 Hurricane Names' title bold */
-  font-size: 1.4em;
+  font-size: 3.2em;
+  font-weight: normal; /* Removes the bold effect */
 }
 
 .hurricane-names-list li:before {
-  content: '• '; /* Adds a bullet point */
-  color: #E5E5E5; /* Optional: color of the bullet */
+  content: ''; /* Removes the custom bullet point */
 }
+
 /* FOOTER */
 
 /* Footer Styling */

@@ -22,6 +22,10 @@
     }
     img {
       border-radius: 10px;
+      width: 100%;
+      height: auto;
+      max-height: 500px; /* Adjust this value to set a fixed heihgt for all images */
+      object-fit: cover; /* This ensure that the image covers the entire area without distorition */
     }
     h1, h5 {
       text-align: center;
@@ -29,6 +33,7 @@
   </style>
 </head>
 <body>
+
  <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
@@ -50,6 +55,7 @@
   </nav>
   
   <div class="container">
+    
      <!-- Home Page Top Text Bar -->
     <h1 class="text-center mb-5">Welcome to Connor's Weather Page!</h1>
 

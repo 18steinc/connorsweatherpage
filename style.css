@@ -77,6 +77,27 @@ h1 {
   transition: transform 0.3s ease;
 }
 
+.hurricane-names-list {
+  list-style-type: none; /* Removes the default bullet points */
+  padding: 0;
+  margin-top: 10px; /* Adjust this to align it properly with the outlook */
+}
+
+.hurricane-names-list li {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: #E5E5E5; /* Matches your Platinum text color */
+}
+
+.hurricane-names-list li:first-child {
+  font-weight: bold; /* Makes the '2024 Hurricane Names' title bold */
+  font-size: 1.4em;
+}
+
+.hurricane-names-list li:before {
+  content: '• '; /* Adds a bullet point */
+  color: #E5E5E5; /* Optional: color of the bullet */
+}
 /* FOOTER */
 
 /* Footer Styling */

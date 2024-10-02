@@ -38,6 +38,10 @@ h1, h5 {
   height: 80px;  /* Adjusted height for the navbar logo */
   margin-right: 10px;
 }
+/* Increase font size for navigation bar links */
+.navbar .nav-link {
+  font-size: 1.25rem; /* Adjust the size as needed (e.g., 1.5rem, 20px, etc.) */
+}
 
 /* Footer Styling */
 .footer {

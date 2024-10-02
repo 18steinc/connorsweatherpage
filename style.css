@@ -130,6 +130,16 @@ button.btn:focus {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.hurricane-names-list li {
+  font-size: 1em; /* Adjust font size for names to be smaller */
+  margin-bottom: 3px; /* Adjust bottom margin for better spacing */
+}
+
+.button-container button {
+  width: 100%; /* Make buttons full-width for better usability */
+  padding: 8px; /* Adjust padding for better button size */
+}
+
 /* END HURRICANE PAGE *? 
 
 /* FOOTER */

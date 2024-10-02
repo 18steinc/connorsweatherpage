@@ -87,8 +87,8 @@ h1 {
 }
 
 .hurricane-names-list li {
-  font-size: 1.3em; /* Slightly smaller font size for the names */
-  margin-bottom: 5px; /* Reduces spacing between names */
+  font-size: 1em; /* Slightly smaller font size for the names */
+  margin-bottom: 3px; /* Reduces spacing between names */
   color: #E5E5E5; /* Matches your Platinum text color */
 }
 

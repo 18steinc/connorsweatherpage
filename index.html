@@ -6,7 +6,7 @@
   <title>Connor's Weather Page - Home</title>
   
   <!-- Link to external style.css -->
-  <link rel="stylesheet" href="style.css"> <!-- Your external CSS file -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -36,7 +36,6 @@
     <h1 class="text-center mb-5">Welcome to Connor's Weather Page!</h1>
 
     <div class="row">
-      
       <!-- Widget at the top with Orlando live data -->
       <div class="col-md-12 text-center">
         <a class="weatherwidget-io" href="https://forecast7.com/en/28d54n81d38/orlando/?unit=us" data-label_1="ORLANDO" data-label_2="WEATHER" data-theme="gray">ORLANDO WEATHER</a>
@@ -52,18 +51,12 @@
         <div class="col-md-6 d-flex">
           <div class="card mb-4 flex-fill">
             <img src="https://www.nhc.noaa.gov/xgtwo/two_atl_7d0.png" class="card-img-top" alt="Seven-Day Tropical Weather Outlook" id="outlook7">
-            <div class="card-body">
-              <h5 class="card-title"></h5>
-            </div>
           </div>
         </div>
         <!-- 2 Day Tropical Outlook -->
         <div class="col-md-6 d-flex">
           <div class="card mb-4 flex-fill">
             <img src="https://www.nhc.noaa.gov/xgtwo/two_atl_2d0.png" class="card-img-top" alt="Two-Day Tropical Weather Outlook" id="outlook2">
-            <div class="card-body">
-              <h5 class="card-title"></h5>
-            </div>
           </div>
         </div>
       </div>
@@ -75,8 +68,6 @@
           <div class="card mb-4 flex-fill">
             <h5 class="card-title">Severe Weather Outlook for Today</h5>
             <img src="https://www.spc.noaa.gov/products/outlook/day1otlk_0100.gif" class="card-img-top" alt="Severe Weather Outlook" id="outlookSevere">
-            <div class="card-body">
-            </div>
           </div>
         </div>
         <!-- Florida Live Radar -->
@@ -84,9 +75,6 @@
           <div class="card mb-4 flex-fill">
             <h5 class="card-title">Florida Live Radar</h5>
             <img src="https://radar.weather.gov/ridge/standard/SOUTHEAST_loop.gif" class="card-img-top" alt="Florida Live Radar" id="liveRadar">
-            <div class="card-body">
-              
-            </div>
           </div>
         </div>
       </div>
@@ -94,27 +82,23 @@
     </div>
   </div>
 
-<!-- Gulf & Atlantic Basic Radar - 7 Day Florida Rainfall -->
-<div class="row">
-  <!-- Gulf & Atlantic Basic Radar -->
-  <div class="col-md-6 d-flex">
-    <div class="card mb-4 flex-fill">
-      <h5 class="card-title">Gulf of Mexico & Atlantic Live Radar</h5>
-      <img src="https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/taw/Sandwich/GOES16-TAW-Sandwich-900x540.gif" class="card-img-top" alt="Gulf & Atlantic Live Radar" id="gulfAtlanticRadar">
-      <div class="card-body">
+  <!-- Gulf & Atlantic Basic Radar - 7 Day Florida Rainfall -->
+  <div class="row">
+    <!-- Gulf & Atlantic Basic Radar -->
+    <div class="col-md-6 d-flex">
+      <div class="card mb-4 flex-fill">
+        <h5 class="card-title">Gulf of Mexico & Atlantic Live Radar</h5>
+        <img src="https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/taw/Sandwich/GOES16-TAW-Sandwich-900x540.gif" class="card-img-top" alt="Gulf & Atlantic Live Radar" id="gulfAtlanticRadar">
+      </div>
+    </div>
+    <!-- Florida 7 Day Rainfall -->
+    <div class="col-md-6 d-flex">
+      <div class="card mb-4 flex-fill">
+        <h5 class="card-title">7 Day Rainfall Totals - Euro Model</h5>
+        <img src="https://media.raven.news/images/wx/bn9/WSI/Forecasts/lg_aatrack6.jpg" class="card-img-top" alt="7 Day Rainfall" id="rainfallTotals">
       </div>
     </div>
   </div>
-  <!-- Florida 7 Day Rainfall -->
-  <div class="col-md-6 d-flex">
-    <div class="card mb-4 flex-fill">
-      <h5 class="card-title">7 Day Rainfall Totals - Euro Model</h5>
-      <img src="https://media.raven.news/images/wx/bn9/WSI/Forecasts/lg_aatrack6.jpg" class="card-img-top" alt="7 Day Rainfall" id="rainfallTotals">
-      <div class="card-body">
-      </div>
-    </div>
-  </div>
-</div>
 
   <!-- Bootstrap JS and Popper -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>

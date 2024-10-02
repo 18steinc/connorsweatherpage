@@ -54,7 +54,7 @@ h1, h5 {
 /* Style for active link */
 .navbar .nav-link.active {
   font-weight: bold;
-  color: #ffcc00; /* Highlight color for active link */
+  color: #ef7301; /* Highlight color for active link */
 }
 /* Sticky Navbar */
 .navbar {

@@ -77,6 +77,8 @@ h1 {
   transition: transform 0.3s ease;
 }
 
+
+/* Hurricane Page - Hurricane Name List */
 .hurricane-names-list {
   list-style-type: none; /* Removes the default bullet points */
   padding: 0;

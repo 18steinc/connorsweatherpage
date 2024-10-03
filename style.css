@@ -192,6 +192,18 @@ h1 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+/* OTHER BUTTONS */ 
+
+.button-container {
+  position: fixed; /* Keep the buttons fixed to the right */
+  top: 20%; /* Adjust top position as needed */
+  right: 10px; /* Adjust right position as needed */
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px; /* Space between buttons */
+}
+
+
 /* FOOTER */
 
 /* Footer Styling */

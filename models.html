@@ -10,6 +10,18 @@
   
   <!-- Link to external style.css -->
   <link rel="stylesheet" href="style.css">
+  <style>
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center the buttons */
+    }
+    
+    .btn {
+      width: 200px; /* Adjust this value to your preferred button width */
+      margin-bottom: 10px; /* Space between buttons */
+    }
+  </style>
 </head>
 <body>
 
@@ -40,13 +52,13 @@
   <div class="container text-center">
     <h1>Weather Models</h1>
     <div class="button-container">
-      <button class="btn btn-primary mb-3" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=ecmwf&region=atl&pkg=mslpaNorm', '_blank')">EURO</button>
-      <button class="btn btn-primary mb-3" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=gfs&region=atl&pkg=mslpaNorm', '_blank')">GFS</button>
-      <button class="btn btn-primary mb-3" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=hrrr&region=seus&pkg=ref_frzn', '_blank')">HRRR</button>
-      <button class="btn btn-primary mb-3" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=icon&region=seus&pkg=ref_frzn&runtime=2023042812&fh=4', '_blank')">ICON</button>
-      <button class="btn btn-primary mb-3" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=gem&region=atl&pkg=mslpaNorm', '_blank')">CMC</button>
-      <button class="btn btn-primary mb-3" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=navgem&region=atl&pkg=mslpaNorm&runtime=2024100106&fh=12', '_blank')">NAVGEM</button>
-      <button class="btn btn-primary mb-3" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=ec-aifs&region=atl&pkg=mslpaNorm&runtime=2024100100&fh=6', '_blank')">EURO AI</button>
+      <button class="btn btn-primary" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=ecmwf&region=atl&pkg=mslpaNorm', '_blank')">EURO</button>
+      <button class="btn btn-primary" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=gfs&region=atl&pkg=mslpaNorm', '_blank')">GFS</button>
+      <button class="btn btn-primary" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=hrrr&region=seus&pkg=ref_frzn', '_blank')">HRRR</button>
+      <button class="btn btn-primary" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=icon&region=seus&pkg=ref_frzn&runtime=2023042812&fh=4', '_blank')">ICON</button>
+      <button class="btn btn-primary" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=gem&region=atl&pkg=mslpaNorm', '_blank')">CMC</button>
+      <button class="btn btn-primary" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=navgem&region=atl&pkg=mslpaNorm&runtime=2024100106&fh=12', '_blank')">NAVGEM</button>
+      <button class="btn btn-primary" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=ec-aifs&region=atl&pkg=mslpaNorm&runtime=2024100100&fh=6', '_blank')">EURO AI</button>
     </div>
   </div>
   

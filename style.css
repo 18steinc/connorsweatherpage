@@ -45,23 +45,21 @@ h1 {
 /* Navigation Bar Logo */
 .nav-logo {
   height: 80px;  /* Adjusted height for the navbar logo */
-  margin-right: 10px;
+  margin: 0 auto; /* Center the logo */
+  display: block; /* Ensure the logo is treated as a block element */
 }
 
 /* Center logo in the navbar */
-.navbar-brand-container {
+.navbar-logo-container {
+  flex-grow: 1; /* This will allow the logo container to take up remaining space */
   display: flex;
-  align-items: center;
-  width: 100%;
+  justify-content: center; /* Center the logo container */
 }
 
+/* Make sure to align the left items in the navbar */
 .navbar-left {
   display: flex;
-  align-items: center;
-}
-
-.navbar-right {
-  flex-grow: 1; /* This will allow the right side to take the remaining space */
+  align-items: center; /* Center items vertically */
 }
 
 /* Increase font size for navigation bar links */

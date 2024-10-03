@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather Data - Models</title>
-  
+   
   <!-- Favicon -->
   <link rel="icon" href="images/favicon_no_background.ico" type="image/ico">
   
@@ -16,20 +16,21 @@
       flex-direction: column;
       align-items: center; /* Center the buttons */
     }
-    
+
     .btn {
-      width: 70px; /* Adjust this value to your preferred button width */
+      width: 100px; /* Set a fixed width for the buttons */
       margin-bottom: 20px; /* Space between buttons */
+      text-align: center; /* Center the text within the button */
     }
   </style>
 </head>
 <body>
 
-<!-- Navigation Bar -->
+  <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
-        <img src="images/cwp_logo_no_background.png" alt="CWP Logo" class="nav-logo">
+         <img src="images/cwp_logo_no_background.png" alt="CWP Logo" class="nav-logo">
         CWP
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,18 +49,15 @@
     </div>
   </nav>
 
-  <!-- Models Section -->
-  <div class="container text-center">
-    <h1>Weather Models</h1>
-    <div class="button-container">
-      <button class="btn btn-primary" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=ecmwf&region=atl&pkg=mslpaNorm', '_blank')">EURO</button>
-      <button class="btn btn-primary" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=gfs&region=atl&pkg=mslpaNorm', '_blank')">GFS</button>
-      <button class="btn btn-primary" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=hrrr&region=seus&pkg=ref_frzn', '_blank')">HRRR</button>
-      <button class="btn btn-primary" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=icon&region=seus&pkg=ref_frzn&runtime=2023042812&fh=4', '_blank')">ICON</button>
-      <button class="btn btn-primary" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=gem&region=atl&pkg=mslpaNorm', '_blank')">CMC</button>
-      <button class="btn btn-primary" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=navgem&region=atl&pkg=mslpaNorm&runtime=2024100106&fh=12', '_blank')">NAVGEM</button>
-      <button class="btn btn-primary" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=ec-aifs&region=atl&pkg=mslpaNorm&runtime=2024100100&fh=6', '_blank')">EURO AI</button>
-    </div>
+  <h1>Weather Models</h1>
+  <div class="button-container">
+    <a href="https://www.tropicaltidbits.com/analysis/models/?model=ecmwf&region=atl&pkg=mslpaNorm" target="_blank" class="btn btn-primary">EURO</a>
+    <a href="https://www.tropicaltidbits.com/analysis/models/?model=gfs&region=atl&pkg=mslpaNorm" target="_blank" class="btn btn-primary">GFS</a>
+    <a href="https://www.tropicaltidbits.com/analysis/models/?model=hrrr&region=seus&pkg=ref_frzn" target="_blank" class="btn btn-primary">HRRR</a>
+    <a href="https://www.tropicaltidbits.com/analysis/models/?model=icon&region=seus&pkg=ref_frzn&runtime=2023042812&fh=4" target="_blank" class="btn btn-primary">ICON</a>
+    <a href="https://www.tropicaltidbits.com/analysis/models/?model=gem&region=atl&pkg=mslpaNorm" target="_blank" class="btn btn-primary">CMC</a>
+    <a href="https://www.tropicaltidbits.com/analysis/models/?model=navgem&region=atl&pkg=mslpaNorm&runtime=2024100106&fh=12" target="_blank" class="btn btn-primary">NAVGEM</a>
+    <a href="https://www.tropicaltidbits.com/analysis/models/?model=ec-aifs&region=atl&pkg=mslpaNorm&runtime=2024100100&fh=6" target="_blank" class="btn btn-primary">EURO AI</a>
   </div>
   
   <!-- Footer -->
@@ -67,7 +65,7 @@
     <div class="container text-center">
       <img src="images/cwp_logo.png" alt="CWP Logo" class="footer-logo">
       <p>www.connorsweatherpage.com</p>
-      <p>This website cannot be used as official forecasts or weather information, I am not an official meteorologist this website is built as a hobby project. The majority of this data is not mine, please credit the source for the data. Please only refer to your local or national news for official weather information.</p>
+      <p>This website cannot be used as official forecasts or weather information, I am not an official meteorologist this website is built as a hobby project. Please only refer to your local or national news for official weather information.</p>
     </div>
   </footer>
   

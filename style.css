@@ -48,6 +48,22 @@ h1 {
   margin-right: 10px;
 }
 
+/* Center logo in the navbar */
+.navbar-brand-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+  flex-grow: 1; /* This will allow the right side to take the remaining space */
+}
+
 /* Increase font size for navigation bar links */
 .navbar .nav-link {
   font-size: 1.25rem; /* Adjust the size as needed (e.g., 1.5rem, 20px, etc.) */

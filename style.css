@@ -152,7 +152,7 @@ h1 {
 }
 
 .btn:hover {
-  background-color: #0A0A0A; /* Night color on hover */
+  background-color: #ef7301; /* Night color on hover */
   transform: scale(1.1); /* Same scale effect as navbar links */
 }
 

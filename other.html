@@ -9,11 +9,33 @@
 <!-- Favicon -->
   <link rel="icon" href="images/favicon_no_background.ico" type="image/ico">
   
-<!-- Link to external style.css -->
+  <!-- Link to external style.css -->
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Add CSS for button positioning */
+    .button-container {
+      position: fixed;
+      right: 20px; /* Adjust as needed */
+      top: 100px; /* Adjust as needed */
+      display: flex;
+      flex-direction: column;
+      gap: 10px; /* Space between buttons */
+    }
+    .btn-custom {
+      background-color: #13213C; /* Oxford Blue */
+      color: #E5E5E5; /* Platinum */
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-
+  
 <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
@@ -37,6 +59,12 @@
     </div>
   </nav>
 
+<!-- Button Container -->
+<div class="button-container">
+  <a href="#button1" class="btn-custom">Button 1</a>
+  <a href="#button2" class="btn-custom">Button 2</a>
+  <a href="#button3" class="btn-custom">Button 3</a>
+</div>
   
 <!-- Row 1 -->
 <div class="container">
@@ -168,7 +196,12 @@
 </div>
 
     
-
+<!-- Buttons on the right side -->
+<div class="button-container">
+  <button class="btn btn-primary" onclick="alert('Button 1 clicked!')">Button 1</button>
+  <button class="btn btn-secondary" onclick="alert('Button 2 clicked!')">Button 2</button>
+  <button class="btn btn-success" onclick="alert('Button 3 clicked!')">Button 3</button>
+</div>
     
     
     <!-- Footer -->

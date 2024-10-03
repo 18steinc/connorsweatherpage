@@ -4,12 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather Data - Models</title>
-   
-
-<!-- Favicon -->
+  
+  <!-- Favicon -->
   <link rel="icon" href="images/favicon_no_background.ico" type="image/ico">
   
-<!-- Link to external style.css -->
+  <!-- Link to external style.css -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,7 +17,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
-         <img src="images/cwp_logo_no_background.png" alt="CWP Logo" class="nav-logo">
+        <img src="images/cwp_logo_no_background.png" alt="CWP Logo" class="nav-logo">
         CWP
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,30 +36,17 @@
     </div>
   </nav>
 
-  
-<!-- Row 1 --> 
-  <div class="container">
-    <h1 class="text-center mb-5">Tropical Models</h1>
-
-    <div class="row">
-      <!-- Model 1 -->
-      <div class="col-md-6">
-        <div class="card mb-4">
-          <img src="https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/taw/Sandwich/GOES16-TAW-Sandwich-900x540.gif" class="card-img-top" alt="Atlantic & Gulf of Mexico Live Radar">
-          <div class="card-body">
-            <h5 class="card-title">Atlantic & Gulf of Mexico Live Radar</h5>
-          </div>
-        </div>
-      </div>
-      <!-- Model 2 -->
-      <div class="col-md-6">
-        <div class="card mb-4">
-          <img src="https://media.raven.news/images/wx/bn9/60min/fl_sea_sfc_temps.jpg" class="card-img-top" alt="Gulf of Mexico & Atlantic Water Temperature Map">
-          <div class="card-body">
-            <h5 class="card-title">Gulf of Mexico & Atlantic Water Temperature Map</h5>
-          </div>
-        </div>
-      </div>
+  <!-- Models Section -->
+  <div class="container text-center">
+    <h1>Weather Models</h1>
+    <div class="button-container">
+      <button class="btn btn-primary mb-3" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=ecmwf&region=atl&pkg=mslpaNorm', '_blank')">EURO</button>
+      <button class="btn btn-primary mb-3" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=gfs&region=atl&pkg=mslpaNorm', '_blank')">GFS</button>
+      <button class="btn btn-primary mb-3" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=hrrr&region=seus&pkg=ref_frzn', '_blank')">HRRR</button>
+      <button class="btn btn-primary mb-3" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=icon&region=seus&pkg=ref_frzn&runtime=2023042812&fh=4', '_blank')">ICON</button>
+      <button class="btn btn-primary mb-3" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=gem&region=atl&pkg=mslpaNorm', '_blank')">CMC</button>
+      <button class="btn btn-primary mb-3" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=navgem&region=atl&pkg=mslpaNorm&runtime=2024100106&fh=12', '_blank')">NAVGEM</button>
+      <button class="btn btn-primary mb-3" onclick="window.open('https://www.tropicaltidbits.com/analysis/models/?model=ec-aifs&region=atl&pkg=mslpaNorm&runtime=2024100100&fh=6', '_blank')">EURO AI</button>
     </div>
   </div>
   
@@ -76,7 +62,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
     
-<!-- Link to your navbar.js file -->
+  <!-- Link to your navbar.js file -->
   <script src="navbar.js"></script>
 </body>
 </html>

@@ -1,3 +1,7 @@
+8:08 change before moving logo centered on the nav bar 
+
+css
+
 /* External styles for Connor's Weather Page */
 
 /* Bootstrap CSS */
@@ -45,21 +49,7 @@ h1 {
 /* Navigation Bar Logo */
 .nav-logo {
   height: 80px;  /* Adjusted height for the navbar logo */
-  margin: 0 auto; /* Center the logo */
-  display: block; /* Ensure the logo is treated as a block element */
-}
-
-/* Center logo in the navbar */
-.navbar-logo-container {
-  flex-grow: 1; /* This will allow the logo container to take up remaining space */
-  display: flex;
-  justify-content: center; /* Center the logo container */
-}
-
-/* Make sure to align the left items in the navbar */
-.navbar-left {
-  display: flex;
-  align-items: center; /* Center items vertically */
+  margin-right: 10px;
 }
 
 /* Increase font size for navigation bar links */

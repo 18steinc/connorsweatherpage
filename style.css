@@ -115,8 +115,8 @@ h1 {
 }
 
 .btn {
-  width: 120px; /* Set a fixed width for the buttons */
-  margin-bottom: 20px; /* Space between buttons */
+  width: 180px; /* Set a fixed width for the buttons */
+  margin-bottom: 10px; /* Space between buttons */
   text-align: center; /* Center the text within the button */
   font-size: 1.2em; /* Adjust text size */
   padding: 10px;

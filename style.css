@@ -243,13 +243,4 @@ a.dark-mode {
 
 /* Add more selectors as needed */
 
-/* Dark Mode Styles */
-.dark-mode {
-    background-color: #121212;
-    color: #e5e5e5;
-}
 
-/* Invert navbar color in dark mode */
-.dark-mode .navbar {
-    background-color: #333;
-}

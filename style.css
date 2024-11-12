@@ -192,6 +192,12 @@ h1 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Hide toggle button on screens larger than 992px (desktop view) */
+@media (min-width: 992px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
 
 /* FOOTER */
 
@@ -216,5 +222,7 @@ h1 {
   font-weight: normal; /* Make the last paragraph (the long message) normal weight */
   font-size: 0.9em; /* Optional: Adjust the font size to make it more readable */
 }
+
+
 
 

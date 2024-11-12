@@ -46,17 +46,10 @@
 <body>
 
 
-<!-- Navigation Bar -->
- <div id="navbar"></div>
-<script>
-  fetch("navbar.html")
-    .then(response => response.text())
-    .then(data => document.getElementById("navbar").innerHTML = data)
-    .catch(error => console.error("Error loading navigation bar:", error));
-</script>
-  
-  
- <div class="container">
+<!-- Navigation Bar --> 
+  <div id="navbar"></div>
+
+  <div class="container">
   <h1 class="text-center mb-5">Hurricane Data</h1>
   <div class="row">
     <!-- Hurricane Names List (left side) -->

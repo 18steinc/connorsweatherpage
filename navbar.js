@@ -1,5 +1,3 @@
-<!-- Navigation Bar -->
-
   fetch("navbar.html")
     .then(response => response.text())
     .then(data => document.getElementById("navbar").innerHTML = data);
@@ -9,7 +7,6 @@
     document.body.appendChild(scriptBootstrap);
   }]
     .catch(error => console.error("Error loading navigation bar:", error));
-</script>
 
 
 // Get the current URL

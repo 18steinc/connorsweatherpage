@@ -1,22 +1,24 @@
-//navbar.js
+// navbar.js
 fetch("navbar.html")
-    .then(response => response.text())
-    .then(data => document.getElementById("navbar").innerHTML = data);
-  // Dynamically load bootstrap JS components after loading navbar
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("navbar").innerHTML = data;
+
+    // Dynamically load Bootstrap JS components after loading navbar
     const scriptBootstrap = document.createElement("script");
     scriptBootstrap.src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js";
-    scriptBootstrap.onlaod = ( ) +> {
-        //Ensure the navbar collpse works for mobile
+    scriptBootstrap.onload = () => {
+      // Ensure the navbar collapse works for mobile
       const navbarToggler = document.querySelector('.navbar-toggler');
       const navbarCollapse = document.querySelector('#navbarNav');
 
-      navbarToggler.addEventListener('click', ( ) => {
-        navbarCollapse.classicList.toggle('show');
+      navbarToggler.addEventListener('click', () => {
+        navbarCollapse.classList.toggle('show');
       });
-};
+    };
     document.body.appendChild(scriptBootstrap);
-  }]
-    .catch(error => console.error("Error loading navigation bar:", error));
+  })
+  .catch(error => console.error("Error loading navigation bar:", error));
 
 
 // Get the current URL

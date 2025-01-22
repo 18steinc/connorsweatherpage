@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather Data - Local Forecast</title>
+  <title>Dynamic Local Weather</title>
 
   <!-- Favicon -->
   <link rel="icon" href="images/favicon_no_background.ico" type="image/ico">
-  
+
   <!-- Link to external style.css -->
   <link rel="stylesheet" href="style.css">
 
@@ -17,77 +17,10 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-VSZCJ8JBXL');
   </script>
-  
-</head>
-<body>
 
-
-
-
-  
-<!-- Navigation Bar --> 
-  <div id="navbar"></div>
-
-  <div class="container">
-
-
-
-    
-   <!-- Home Page Top Text Bar -->
-    <h1 class="text-center mb-5">WORK IN PROGRESS - Your Local Weather</h1>
-
-
-    
-    <div class="row">
-      <!-- 7 Day Forecast -->
-      <h2 class="text-center mb-3">7 Day Forecast</h2>
-      <script>
-        (function(d, s, id) {
-            if (d.getElementById(id)) {
-                if (window.__TOMORROW__) {
-                    window.__TOMORROW__.renderWidget();
-                }
-                return;
-            }
-            const fjs = d.getElementsByTagName(s)[0];
-            const js = d.createElement(s);
-            js.id = id;
-            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
-
-            fjs.parentNode.insertBefore(js, fjs);
-        })(document, 'script', 'tomorrow-sdk');
-      </script>
-
-      <div class="tomorrow"
-         data-location-id=""
-         data-language="EN"
-         data-unit-system="IMPERIAL"
-         data-skin="dark"
-         data-widget-type="upcoming"
-         style="padding-bottom:22px;position:relative;"
-      >
-        <a
-          href="https://www.tomorrow.io/weather-api/"
-          rel="nofollow noopener noreferrer"
-          target="_blank"
-          style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
-        >
-          <img
-            alt="Powered by the Tomorrow.io Weather API"
-            src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
-            width="250"
-            height="18"
-          />
-        </a>
-      </div>
-    </div> <!-- Closing the .row div -->
-
- <div class="row mt-5">
-  <!-- Hourly Forecast -->
-  <h2 class="text-center mb-3">Hourly Forecast</h2>
+  <!-- Tomorrow.io SDK -->
   <script>
     (function(d, s, id) {
         if (d.getElementById(id)) {
@@ -100,56 +33,105 @@
         const js = d.createElement(s);
         js.id = id;
         js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
-
         fjs.parentNode.insertBefore(js, fjs);
     })(document, 'script', 'tomorrow-sdk');
   </script>
+</head>
+<body>
 
-  <div class="tomorrow"
-     data-location-id=""
-     data-language="EN"
-     data-unit-system="IMPERIAL"
-     data-skin="dark"
-     data-widget-type="hourly"
-     style="padding-bottom:22px;position:relative;"
-  >
-    <a
-      href="https://www.tomorrow.io/weather-api/"
-      rel="nofollow noopener noreferrer"
-      target="_blank"
-      style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
-    >
-      <img
-        alt="Powered by the Tomorrow.io Weather API"
-        src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
-        width="250"
-        height="18"
-      />
-    </a>
-  </div>
-</div> <!-- Closing the .row div -->
+<!-- Navigation Bar -->
+<div id="navbar"></div>
 
+<div class="container">
+  <h1 class="text-center mb-5">Dynamic Weather Forecast</h1>
 
-
-
-  
-   <!-- Footer -->
-  <footer class="footer">
-    <div class="container text-center">
-      <img src="images/cwp_logo_no_background.png" alt="CWP Logo" class="footer-logo">
-      <p>www.connorsweatherpage.com</p>
-      <p>This website is not intended for use as a reliable forecast or weather information. Please refer to your local or national news or the National Weather Service for official weather information including weather warnings or reports on dangerous weather conditions. This information is being provided for informational and entertainment purposes only. Certain data contained in this website is sourced from third party websites, so appropriate reference should be made to the source for the data.
-
-This content  is provided “as is” without any express or implied warranties of any kind, including, but not limited to, the implied warranties of fitness for a particular purpose, and non-infringement. The content developer does not warrant that the product/service will meet your requirements, operate without interruption, or be error-free.</p>
+  <!-- Dynamic Weather Widgets -->
+  <div id="widgets">
+    <h2 class="text-center mb-3">7 Day Forecast</h2>
+    <div id="seven-day-widget" class="tomorrow"
+         data-language="EN"
+         data-unit-system="IMPERIAL"
+         data-skin="dark"
+         data-widget-type="upcoming"
+         style="padding-bottom:22px;position:relative;">
     </div>
-  </footer>
 
-<!-- Bootstrap JS and Popper-->
+    <h2 class="text-center mt-5 mb-3">Hourly Forecast</h2>
+    <div id="hourly-widget" class="tomorrow"
+         data-language="EN"
+         data-unit-system="IMPERIAL"
+         data-skin="dark"
+         data-widget-type="hourly"
+         style="padding-bottom:22px;position:relative;">
+    </div>
+  </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="container text-center">
+    <img src="images/cwp_logo_no_background.png" alt="CWP Logo" class="footer-logo">
+    <p>www.connorsweatherpage.com</p>
+    <p>
+      This website is not intended for use as a reliable forecast or weather information. Please refer to your local or national news or the National Weather Service for official weather information including weather warnings or reports on dangerous weather conditions. This information is being provided for informational and entertainment purposes only. Certain data contained in this website is sourced from third-party websites, so appropriate reference should be made to the source for the data.
+
+      This content is provided “as is” without any express or implied warranties of any kind, including, but not limited to, the implied warranties of fitness for a particular purpose, and non-infringement. The content developer does not warrant that the product/service will meet your requirements, operate without interruption, or be error-free.
+    </p>
+  </div>
+</footer>
+
+<!-- JavaScript to Fetch User's Location -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if ('geolocation' in navigator) {
+      navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+    } else {
+      alert('Geolocation is not supported by your browser.');
+    }
+
+    function successCallback(position) {
+      const lat = position.coords.latitude;
+      const lon = position.coords.longitude;
+
+      // Set latitude and longitude dynamically for the widgets
+      const widgets = document.querySelectorAll('.tomorrow');
+      widgets.forEach(widget => {
+        widget.setAttribute('data-location-id', `${lat},${lon}`);
+      });
+
+      // Render the widgets with the user's location
+      if (window.__TOMORROW__) {
+        window.__TOMORROW__.renderWidget();
+      }
+    }
+
+    function errorCallback(error) {
+      console.error('Error retrieving location:', error.message);
+      
+      // Use a default location (e.g., New York City) if location access fails
+      const defaultLat = 40.7128;
+      const defaultLon = -74.0060;
+
+      const widgets = document.querySelectorAll('.tomorrow');
+      widgets.forEach(widget => {
+        widget.setAttribute('data-location-id', `${defaultLat},${defaultLon}`);
+      });
+
+      if (window.__TOMORROW__) {
+        window.__TOMORROW__.renderWidget();
+      }
+
+      alert('Unable to retrieve your location. Showing weather for New York City.');
+    }
+  });
+</script>
+
+<!-- Bootstrap JS and Popper -->
 <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
 <!-- Link to navbar.js file -->
 <script defer src="navbar.js"></script>
-  
+
 </body>
 </html>

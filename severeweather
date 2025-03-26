@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Data - Other</title>
+  
+
+<!-- Favicon -->
+  <link rel="icon" href="images/favicon_no_background.ico" type="image/ico">
+  
+<!-- Link to external style.css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSZCJ8JBXL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-VSZCJ8JBXL');
+  </script>
+  
+  
+</head>
+<body>
+
+
+<!-- Navigation Bar --> 
+  <div id="navbar"></div>
+  
+<!-- Row 1 -->
+<div class="container">
+  <h1 class="text-center mb-5">Severe Weather Outlook</h1>
+  
+  <div class="row">
+    <!-- US High Temperatures Today -->
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <h5 class="card-title">Today's Severe Weather Outlook</h5>
+        <a href="https://www.spc.noaa.gov/partners/outlooks/state/swody1.png" target="_blank">
+          <img src="https://www.spc.noaa.gov/partners/outlooks/state/swody1.png" class="card-img-top" alt="Today's Severe Weather Outlook">
+        </a>
+        <div class="card-body"></div>
+      </div>
+    </div>
+    
+    <!-- US Low Temperatures Today -->
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <h5 class="card-title">US Low Temperatures Today</h5>
+        <a href="https://graphical.weather.gov/images/conus/MinT1_conus.png" target="_blank">
+          <img src="https://graphical.weather.gov/images/conus/MinT1_conus.png" class="card-img-top" alt="US Low Temperatures Today">
+        </a>
+        <div class="card-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 2 -->
+  <div class="row">
+    <!-- 3-7 Day Hazards Outlook -->
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <h5 class="card-title">3-7 Day Hazards Outlook</h5>
+        <a href="https://www.wpc.ncep.noaa.gov/threats/threats.php" target="_blank">
+          <img src="https://www.wpc.ncep.noaa.gov/threats/final/hazards_d3_7_contours.png" class="card-img-top" alt="3-7 Day Hazards Outlook">
+        </a>
+        <div class="card-body"></div>
+      </div>
+    </div>
+
+    <!-- Current Lighting Strikes -->
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <h5 class="card-title">Current Lighting Strikes</h5>
+        <a href="https://www.lightningmaps.org/#m=oss;t=3;s=1;o=0;b=;ts=0;z=4;y=19.5628;x=-86.001;d=2;dl=8;dc=0;" target="_blank">
+          <img src="https://images.lightningmaps.org/blitzortung/america/index.php?animation=usa_mini" class="card-img-top" alt="Current Lighting Strikes">
+        </a>
+        <div class="card-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 3 -->
+  <div class="row">
+    <!-- Current Wave Heights -->
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <h5 class="card-title">Current Wave Heights</h5>
+        <a href="https://baynews9.com/fl/tampa/weather/tropical.map.html/HurricaneIndex#Wave_Heights-WX" target="_blank">
+          <img src="https://media.raven.news/images/wx/bn9/60min/wave_heights_atl.jpg" class="card-img-top" alt="Current Wave Heights">
+        </a>
+        <div class="card-body"></div>
+      </div>
+    </div>
+
+    <!-- Current Saharan Air Layer -->
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <h5 class="card-title">Current Saharan Air Layer</h5>
+        <a href="https://baynews9.com/fl/tampa/weather/tropical.map.html/HurricaneIndex#Saharan_Dust-WX" target="_blank">
+          <img src="https://media.raven.news/images/wx/bn9/60min/SAL.jpg" class="card-img-top" alt="Current Saharan Air Layer">
+        </a>
+        <div class="card-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 4 -->
+  <div class="row">
+    <!-- Current Sun & Moon Map -->
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <h5 class="card-title">Current Sun & Moon Map</h5>
+        <a href="https://www.timeanddate.com/worldclock/sunearth.html" target="_blank">
+          <img src="https://www.timeanddate.com/scripts/sunmap.php" class="card-img-top" alt="Current Sun & Moon Map">
+        </a>
+        <div class="card-body"></div>
+      </div>
+    </div>
+
+    <!-- Current US Temperatures -->
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <h5 class="card-title">Current US Temperatures</h5>
+        <a href="https://s.w-x.co/staticmaps/acttemp_1280x720.jpg?crop=16:9&width=800&format=pjpg&auto=webp&quality=60" target="_blank">
+          <img src="https://s.w-x.co/staticmaps/acttemp_1280x720.jpg?crop=16:9&width=800&format=pjpg&auto=webp&quality=60" class="card-img-top" alt="Current US Temperatures">
+        </a>
+        <div class="card-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 5 -->
+  <div class="row">
+    <!-- Current US Sky Coverage -->
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <h5 class="card-title">Current US Sky Coverage</h5>
+        <a href="https://graphical.weather.gov/sectors/conus.php?element=Sky" target="_blank">
+          <img src="https://graphical.weather.gov/images/conus/Sky4_conus.png" class="card-img-top" alt="Current US Sky Coverage">
+        </a>
+        <div class="card-body"></div>
+      </div>
+    </div>
+
+    <!-- Current US Wildfire Potential -->
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <h5 class="card-title">Current US Wildfire Potential</h5>
+        <a href="https://www.nifc.gov/nicc-files/predictive/outlooks/month1_outlook.png" target="_blank">
+          <img src="https://www.nifc.gov/nicc-files/predictive/outlooks/month1_outlook.png" class="card-img-top" alt="Current US Wildfire Potential">
+        </a>
+        <div class="card-body"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <img src="images/cwp_logo_no_background.png" alt="CWP Logo" class="footer-logo">
+      <p>www.connorsweatherpage.com</p>
+      <p>This website is not intended for use as a reliable forecast or weather information. Please refer to your local or national news or the National Weather Service for official weather information including weather warnings or reports on dangerous weather conditions. This information is being provided for informational and entertainment purposes only. Certain data contained in this website is sourced from third party websites, so appropriate reference should be made to the source for the data.
+
+This content  is provided “as is” without any express or implied warranties of any kind, including, but not limited to, the implied warranties of fitness for a particular purpose, and non-infringement. The content developer does not warrant that the product/service will meet your requirements, operate without interruption, or be error-free.</p>
+    </div>
+  </footer>
+
+<!-- Bootstrap JS and Popper-->
+<script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+<!-- Link to navbar.js file -->
+<script defer src="navbar.js"></script>
+  
+</body>
+</html>

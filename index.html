@@ -74,6 +74,44 @@
           </a>
         </div>
 
+      
+<!-- Local Live Interactive Radar -->
+<div class="text-center mb-5">
+  <h3 class="mb-3">Your Local Interactive Radar</h3>
+  <div id="local-radar-container" style="max-width: 1000px; margin: 0 auto; height: 600px;">
+    <iframe
+      id="local-radar"
+      title="Local Weather Radar"
+      style="width: 100%; height: 100%; border: 2px solid #ccc; border-radius: 10px;"
+      loading="lazy"
+      src="https://radar.weather.gov/"  <!-- fallback if geolocation fails -->
+    ></iframe>
+  </div>
+</div>
+
+<script>
+  // Function to dynamically update radar based on user location
+  function updateRadarByLocation(lat, lon) {
+    // Construct radar URL using lat/lon with NWS radar
+    const radarUrl = `https://radar.weather.gov/?lat=${lat}&lon=${lon}&zoom=5`;
+    document.getElementById("local-radar").src = radarUrl;
+  }
+
+  // Try to get user location
+  if ("geolocation" in navigator) {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        updateRadarByLocation(position.coords.latitude, position.coords.longitude);
+      },
+      (error) => {
+        console.warn("Geolocation failed, using default radar view.");
+      }
+    );
+  } else {
+    console.warn("Geolocation not supported by browser.");
+  }
+</script>
+      
     <!-- Row 1 --> 
 <div class="row">
   <!-- Severe Weather Outlook -->

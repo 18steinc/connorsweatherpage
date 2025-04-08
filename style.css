@@ -199,6 +199,28 @@ h1 {
   }
 }
 
+
+/* Make iframe responsive */
+iframe {
+  width: 100%; /* Ensures iframe takes full container width */
+  height: 400px; /* Default height for larger screens */
+}
+
+/* Adjust height of iframe for mobile screens */
+@media (max-width: 768px) {
+  iframe {
+    height: 300px; /* Shorter height on mobile to save space */
+  }
+}
+
+/* Adjust button container for small screens */
+@media (max-width: 768px) {
+  .col-md-3 {
+    width: 100%; /* Make the right column take full width on small screens */
+    padding: 0 10px; /* Some padding for mobile */
+  }
+}
+
 /* FOOTER */
 
 /* Footer Styling */

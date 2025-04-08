@@ -112,7 +112,14 @@
     <button class="btn btn-primary mb-3" onclick="window.open('https://firmanpowerequipment.com/pages/firman-power-outage-tracker', '_blank')">Live Power Outages</button>
     
   </div>
+  
+  <div class="card mt-4 text-start" style="max-height: 400px; overflow-y: auto; background-color: #1e1e1e; color: #e5e5e5; font-size: 14px;">
+    <div class="card-body">
+      <h5 class="card-title">NHC Tropical Weather Discussion</h5>
+      <pre id="nhc-discussion" style="white-space: pre-wrap;"></pre>
+  </div>
 </div>
+
 
 <!-- Row 2 -->
 <!-- Global Tropical Hazard Outlook - Tropical Intensity Map -->
@@ -229,6 +236,20 @@ This content  is provided “as is” without any express or implied warranties 
 
 <!-- Link to navbar.js file -->
 <script defer src="navbar.js"></script>
+
+  <script>
+  // Fetch NHC Discussion text and display it
+  fetch('https://www.nhc.noaa.gov/text/MIATWDAT.shtml')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('nhc-discussion').textContent = data;
+    })
+    .catch(error => {
+      document.getElementById('nhc-discussion').textContent = "Unable to load discussion. Please visit NHC directly.";
+      console.error("Error fetching NHC discussion:", error);
+    });
+</script>
+
   
 </body>
 </html>

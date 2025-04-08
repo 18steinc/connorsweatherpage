@@ -221,6 +221,16 @@ iframe {
   }
 }
 
+/* This is a workaround, scaling the content inside the iframe */
+iframe {
+  width: 100%; /* Full width */
+  height: 600px; /* Default height */
+  transform: scale(0.8); /* Scale down the content */
+  transform-origin: 0 0; /* Ensure it scales from the top-left corner */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+
 /* FOOTER */
 
 /* Footer Styling */

@@ -34,45 +34,62 @@
     
     <div class="row">
       <!-- Widget at the top with live data -->
-  <script>
-        (function(d, s, id) {
-            if (d.getElementById(id)) {
-                if (window.__TOMORROW__) {
-                    window.__TOMORROW__.renderWidget();
-                }
-                return;
+<script>
+    (function(d, s, id) {
+        if (d.getElementById(id)) {
+            if (window.__TOMORROW__) {
+                window.__TOMORROW__.renderWidget();
             }
-            const fjs = d.getElementsByTagName(s)[0];
-            const js = d.createElement(s);
-            js.id = id;
-            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+            return;
+        }
+        const fjs = d.getElementsByTagName(s)[0];
+        const js = d.createElement(s);
+        js.id = id;
+        js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
 
-            fjs.parentNode.insertBefore(js, fjs);
-        })(document, 'script', 'tomorrow-sdk');
-        </script>
+        fjs.parentNode.insertBefore(js, fjs);
+    })(document, 'script', 'tomorrow-sdk');
 
-        <div class="tomorrow"
-           data-location-id=""
-           data-language="EN"
-           data-unit-system="IMPERIAL"
-           data-skin="dark"
-           data-widget-type="upcoming"
-           style="padding-bottom:22px;position:relative;"
-        >
-          <a
-            href="https://www.tomorrow.io/weather-api/"
-            rel="nofollow noopener noreferrer"
-            target="_blank"
-            style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
-          >
-            <img
-              alt="Powered by the Tomorrow.io Weather API"
-              src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
-              width="250"
-              height="18"
-            />
-          </a>
-        </div>
+    // Get user's geolocation
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude;
+            var locationId = `${lat},${lon}`;  // Construct location ID with lat/lon
+            var widgetDiv = document.querySelector('.tomorrow');
+            widgetDiv.setAttribute('data-location-id', locationId);
+            window.__TOMORROW__.renderWidget(); // Re-render widget with updated location
+        }, function(error) {
+            // Handle geolocation errors
+            console.error("Geolocation error: " + error.message);
+            // Use fallback location (Orlando, Florida coordinates)
+            var fallbackLocationId = '28.5383,-81.3792'; // Orlando, Florida coordinates
+            var widgetDiv = document.querySelector('.tomorrow');
+            widgetDiv.setAttribute('data-location-id', fallbackLocationId);
+            window.__TOMORROW__.renderWidget(); // Re-render widget with fallback location
+        });
+    } else {
+        console.error("Geolocation is not supported by this browser.");
+        // Use fallback location if geolocation is not supported
+        var fallbackLocationId = '28.5383,-81.3792'; // Orlando, Florida coordinates
+        var widgetDiv = document.querySelector('.tomorrow');
+        widgetDiv.setAttribute('data-location-id', fallbackLocationId);
+        window.__TOMORROW__.renderWidget(); // Re-render widget with fallback location
+    }
+</script>
+
+<div class="tomorrow"
+   data-location-id=""
+   data-language="EN"
+   data-unit-system="IMPERIAL"
+   data-skin="dark"
+   data-widget-type="upcoming"
+   style="padding-bottom:22px;position:relative;"
+>
+    <a href="https://www.tomorrow.io/weather-api/" rel="nofollow noopener noreferrer" target="_blank" style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
+        <img alt="Powered by the Tomorrow.io Weather API" src="https://weather-website-client.tomorrow.io/img/powered-by.svg" width="250" height="18" />
+    </a>
+</div>
 
       
   <!-- Embedded National Radar -->
